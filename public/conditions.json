@@ -1,0 +1,112 @@
+{
+  "weather": [
+    {
+      "condition": "sunny",
+      "translation": "uterne"
+    },
+    {
+      "condition": "clear",
+      "translation": "alkere akethe"
+    },
+    {
+      "condition": "dry",
+      "translation": "Ahurratye"
+    },
+    {
+      "condition": "dust",
+      "translation": "Ulpmenthe"
+    },
+    {
+      "condition": "mostly sunny",
+      "translation": ""
+    },
+    {
+      "condition": "cloudy",
+      "translation": "ankulye"
+    },
+    {
+      "condition": "rain cloud",
+      "translation": "urlampe"
+    },
+    {
+      "condition": "sunlight shining through a gap in dark clouds",
+      "translation": "alyelenge"
+    },
+    {
+      "condition": "dark rain clouds",
+      "translation": "angkulye-urrperle akngerre"
+    },
+    {
+      "condition": "no clouds (open sky)",
+      "translation": "alkere-alkere"
+    },
+    {
+      "condition": "partly cloudy",
+      "translation": "angkulye arrernelheme"
+    },
+    {
+      "condition": "clearing",
+      "translation": "alkere-irreme"
+    },
+    {
+      "condition": "sky clearing",
+      "translation": "alkerelheme"
+    },
+    {
+      "condition": "Green time after big rain",
+      "translation": "atherrkenye"
+    },
+    {
+      "condition": "light rain / drizzle",
+      "translation": "thewe-thewe"
+    },
+    {
+      "condition": "spitting",
+      "translation": "kwatye pelhe-pelhe"
+    },
+    {
+      "condition": "slight chance of a shower",
+      "translation": "kwatye-apeke anhetyenhe"
+    },
+    {
+      "condition": "rain / raining",
+      "translation": "kwatye-le anheme"
+    },
+    {
+      "condition": "raining heavily",
+      "translation": "kwatye akngerre unterne?"
+    },
+    {
+      "condition": "possible storm",
+      "translation": "kwatyele atweme"
+    },
+    {
+      "condition": "hail",
+      "translation": "apwerteke"
+    },
+    {
+      "condition": "fire",
+      "translation": "ure"
+    },
+    {
+      "condition": "river flow / flood",
+      "translation": "kwatye-urewe"
+    },
+    {
+      "condition": "thunder / lightning",
+      "translation": "unernenge"
+    },
+    {
+      "condition": "frost",
+      "translation": "ilweltye"
+    },
+    {
+      "condition": "smell of rain/ petrichor",
+      "translation": "nyimpe"
+    },
+    {
+      "condition": "rainbow",
+      "translation": "mpwelarre"
+    }
+  ]
+}
