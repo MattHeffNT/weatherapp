@@ -84,9 +84,6 @@ const Card: React.FC = () => {
 
     if (conditions) {
 
-
-
-
       for (let i = 0; i < conditions.length; i++) {
 
         // declare the weatherAPI variable and our API so we can see if the conditions match
