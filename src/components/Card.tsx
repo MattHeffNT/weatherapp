@@ -1,32 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/custom.css'
 
+interface WeatherData {
+  current: {
+    temp_c: number;
+    condition: {
+      text: string;
+    };
+    // ... other properties you expect
+  };
+  // ... other properties you expect
+}
+
 const Card: React.FC = () => {
 
-  const [weather, setWeather] = useState<any>();
   const [conditions, setConditions] = useState<any>();
   const [Arrernte, setArrernte] = useState<any>();
 
-  // check if browser supports geolocation then grab lat/long for showPosition function
-  // we'll use this function to also reverse geocode and name city. Maybe we can create an API for Aboriginal city names as well?
-
-  // function getLocation() {
-  //   if (navigator.geolocation) {
-  //     navigator.geolocation.getCurrentPosition(showPosition);
-
-  //     console.log(navigator.geolocation)
-  //   } else {
-  //     console.log("geolocation not supported in browser");
-  //   }
-  // }
-
-  // function showPosition(position: any) {
-  //   // console.log(position.coords.latitude, position.coords.longitude)
-  //   // console.log(position)
-
-  // }
-
-  // getLocation()
+  const [weather, setWeather] = useState < WeatherData | null>(null);
 
   // get day
   const date = new Date()
@@ -36,6 +27,7 @@ const Card: React.FC = () => {
 
   // fetch weather api
   useEffect(() => {
+
     const fetchWeather = async () => {
 
       try {
@@ -44,14 +36,14 @@ const Card: React.FC = () => {
           // for the location either allow for search and or draw from the location of IP etc
           `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Alice&Springs&aqi=no`
         );
+
         const data = await response.json();
         setWeather(data)
       } catch (err) {
         console.error('Error fetching weather:', err);
       }
-
     };
-    fetchWeather();
+      fetchWeather()
   }, []);
 
 
@@ -59,7 +51,7 @@ const Card: React.FC = () => {
   useEffect(() => {
     const fetchConditions = async () => {
       try {
-        const response = await fetch('/conditions.json');
+        const response = await fetch('./conditions.json');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -70,9 +62,9 @@ const Card: React.FC = () => {
       }
     };
 
-    fetchConditions();
-
+    fetchConditions()
   }, []); // The empty dependency array ensures the effect runs only once on component mount
+
 
   // loop through conditions.json and use the weather api weather description string as the "key"
   // to see if the english matches, then it will pull from the json into our api
@@ -80,7 +72,7 @@ const Card: React.FC = () => {
   // Loop through conditions without rendering it
   useEffect(() => {
 
-
+    if (conditions && weather && weather.current && weather.current.condition) {
       for (let i = 0; i < conditions.length; i++) {
 
         try {
@@ -88,7 +80,7 @@ const Card: React.FC = () => {
           // if they do then we will display on our card
           if (weather) {
 
-            const EnglishWeather = weather.current.condition['text']
+            const EnglishWeather = weather.current.condition.text
             const EnglishOurAPI = (conditions[i].condition);
 
             if (EnglishOurAPI.toLowerCase() == EnglishWeather.toLowerCase()) {
@@ -105,7 +97,8 @@ const Card: React.FC = () => {
         }
 
       }
-    }, [conditions, Arrernte]);
+    }
+  }, [conditions, Arrernte, weather]);
 
   return (
     <div className="container">
@@ -120,24 +113,24 @@ const Card: React.FC = () => {
 
                   <h2>{weather.current.temp_c}°C</h2>
 
-                ) :( <p> Loading ... </p>)}
-
+                ) : (<p> Loading ... </p>)}
 
               </div>
 
               <div id="condition" className="col-sm">
 
-                {/* add weather json check */}
 
-                {Arrernte ? (
+                { weather ? (
                   <>
                     <p>{Arrernte} | {weather.current.condition['text']}</p>
                   </>
                 ) : (
-                  <p> {weather.current.condition['text']}</p>
+                  // <p> {weather.current.condition['text']}</p>
+                  <p> .. loading</p>
                 )}
 
-            </div>
+
+              </div>
             </div>
 
             <div className="row">
