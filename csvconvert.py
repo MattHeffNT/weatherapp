@@ -1,7 +1,6 @@
 import csv
 import json
 
-
 def csv_to_json(csv_file, json_file):
     data = {"conditions": []}
     with open(csv_file, "r") as file:
@@ -10,7 +9,7 @@ def csv_to_json(csv_file, json_file):
         # next(csv_reader)
         for row in csv_reader:
             condition = row[0]
-            translation = row[1]
+            translation = row[1].title()
             data["conditions"].append(
                 {"condition": condition, "translation": translation}
             )
@@ -21,5 +20,5 @@ def csv_to_json(csv_file, json_file):
 
 # Example usage:
 csv_file = "./src/assets/conditions.csv"
-json_file = "output.json"
+json_file = "conditions.json"
 csv_to_json(csv_file, json_file)

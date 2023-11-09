@@ -1,6 +1,7 @@
 import './App.css';
 import './styles/bootstrap.min.css';
-import Card from './components/Card';
+import './styles/custom.css';
+import Card from './components/Card.tsx';
 
 function App() {
 

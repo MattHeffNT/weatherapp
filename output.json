@@ -2,11 +2,11 @@
     "conditions": [
         {
             "condition": "\ufeffsunny",
-            "translation": "Uterne"
+            "translation": "uterne"
         },
         {
             "condition": "clear sky",
-            "translation": "Alkere Akethe"
+            "translation": "alkere akethe"
         },
         {
             "condition": "dry",
@@ -22,91 +22,91 @@
         },
         {
             "condition": "cloudy",
-            "translation": "Ankulye"
+            "translation": "ankulye"
         },
         {
             "condition": "rain cloud",
-            "translation": "Urlampe"
+            "translation": "urlampe"
         },
         {
             "condition": "sunlight shining through a gap in dark clouds",
-            "translation": "Alyelenge"
+            "translation": "alyelenge"
         },
         {
             "condition": "dark rain clouds",
-            "translation": "Angkulye-Urrperle Akngerre"
+            "translation": "angkulye-urrperle akngerre"
         },
         {
             "condition": "no clouds (open sky)",
-            "translation": "Alkere-Alkere"
+            "translation": "alkere-alkere"
         },
         {
             "condition": "partly cloudy",
-            "translation": "Angkulye Arrernelheme"
+            "translation": "angkulye arrernelheme"
         },
         {
             "condition": "clearing",
-            "translation": "Alkere-Irreme"
+            "translation": "alkere-irreme"
         },
         {
             "condition": "sky clearing",
-            "translation": "Alkerelheme"
+            "translation": "alkerelheme"
         },
         {
             "condition": "Green time after big rain",
-            "translation": "Atherrkenye"
+            "translation": "atherrkenye"
         },
         {
             "condition": "light rain / drizzle",
-            "translation": "Thewe-Thewe"
+            "translation": "thewe-thewe"
         },
         {
             "condition": "spitting",
-            "translation": "Kwatye Pelhe-Pelhe"
+            "translation": "kwatye pelhe-pelhe"
         },
         {
             "condition": "slight chance of a shower",
-            "translation": "Kwatye-Apeke Anhetyenhe"
+            "translation": "kwatye-apeke anhetyenhe"
         },
         {
             "condition": "rain / raining",
-            "translation": "Kwatye-Le Anheme"
+            "translation": "kwatye-le anheme"
         },
         {
             "condition": "raining heavily",
-            "translation": "Kwatye Akngerre Unterne?"
+            "translation": "kwatye akngerre unterne?"
         },
         {
             "condition": "possible storm",
-            "translation": "Kwatyele Atweme"
+            "translation": "kwatyele atweme"
         },
         {
             "condition": "hail",
-            "translation": "Apwerteke"
+            "translation": "apwerteke"
         },
         {
             "condition": "fire ",
-            "translation": "Ure"
+            "translation": "ure"
         },
         {
             "condition": "river flow / flood",
-            "translation": "Kwatye-Urewe"
+            "translation": "kwatye-urewe"
         },
         {
             "condition": "thunder / lightning",
-            "translation": "Unernenge"
+            "translation": "unernenge"
         },
         {
             "condition": "frost",
-            "translation": "Ilweltye"
+            "translation": "ilweltye"
         },
         {
             "condition": "smell of rain/ petrichor",
-            "translation": "Nyimpe"
+            "translation": "nyimpe"
         },
         {
             "condition": "rainbow",
-            "translation": "Mpwelarre"
+            "translation": "mpwelarre"
         }
     ]
 }
