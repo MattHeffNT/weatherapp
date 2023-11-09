@@ -1,112 +1,112 @@
 {
-    "conditions": [
-        {
-            "condition": "\ufeffsunny",
-            "translation": "Uterne"
-        },
-        {
-            "condition": "clear sky",
-            "translation": "Alkere Akethe"
-        },
-        {
-            "condition": "dry",
-            "translation": "Ahurratye"
-        },
-        {
-            "condition": "dust",
-            "translation": "Ulpmenthe "
-        },
-        {
-            "condition": "mostly sunny",
-            "translation": ""
-        },
-        {
-            "condition": "cloudy",
-            "translation": "Ankulye"
-        },
-        {
-            "condition": "rain cloud",
-            "translation": "Urlampe"
-        },
-        {
-            "condition": "sunlight shining through a gap in dark clouds",
-            "translation": "Alyelenge"
-        },
-        {
-            "condition": "dark rain clouds",
-            "translation": "Angkulye-Urrperle Akngerre"
-        },
-        {
-            "condition": "no clouds (open sky)",
-            "translation": "Alkere-Alkere"
-        },
-        {
-            "condition": "partly cloudy",
-            "translation": "Angkulye Arrernelheme"
-        },
-        {
-            "condition": "clearing",
-            "translation": "Alkere-Irreme"
-        },
-        {
-            "condition": "sky clearing",
-            "translation": "Alkerelheme"
-        },
-        {
-            "condition": "Green time after big rain",
-            "translation": "Atherrkenye"
-        },
-        {
-            "condition": "light rain / drizzle",
-            "translation": "Thewe-Thewe"
-        },
-        {
-            "condition": "spitting",
-            "translation": "Kwatye Pelhe-Pelhe"
-        },
-        {
-            "condition": "slight chance of a shower",
-            "translation": "Kwatye-Apeke Anhetyenhe"
-        },
-        {
-            "condition": "rain / raining",
-            "translation": "Kwatye-Le Anheme"
-        },
-        {
-            "condition": "raining heavily",
-            "translation": "Kwatye Akngerre Unterne?"
-        },
-        {
-            "condition": "possible storm",
-            "translation": "Kwatyele Atweme"
-        },
-        {
-            "condition": "hail",
-            "translation": "Apwerteke"
-        },
-        {
-            "condition": "fire ",
-            "translation": "Ure"
-        },
-        {
-            "condition": "river flow / flood",
-            "translation": "Kwatye-Urewe"
-        },
-        {
-            "condition": "thunder / lightning",
-            "translation": "Unernenge"
-        },
-        {
-            "condition": "frost",
-            "translation": "Ilweltye"
-        },
-        {
-            "condition": "smell of rain/ petrichor",
-            "translation": "Nyimpe"
-        },
-        {
-            "condition": "rainbow",
-            "translation": "Mpwelarre"
-        }
-    ]
+  "conditions": [
+    {
+      "condition": "sunny",
+      "translation": "Uterne"
+    },
+    {
+      "condition": "clear sky",
+      "translation": "Alkere Akethe"
+    },
+    {
+      "condition": "dry",
+      "translation": "Ahurratye"
+    },
+    {
+      "condition": "dust",
+      "translation": "Ulpmenthe "
+    },
+    {
+      "condition": "mostly sunny",
+      "translation": ""
+    },
+    {
+      "condition": "cloudy",
+      "translation": "Ankulye"
+    },
+    {
+      "condition": "rain cloud",
+      "translation": "Urlampe"
+    },
+    {
+      "condition": "sunlight shining through a gap in dark clouds",
+      "translation": "Alyelenge"
+    },
+    {
+      "condition": "dark rain clouds",
+      "translation": "Angkulye-Urrperle Akngerre"
+    },
+    {
+      "condition": "no clouds (open sky)",
+      "translation": "Alkere-Alkere"
+    },
+    {
+      "condition": "partly cloudy",
+      "translation": "Angkulye Arrernelheme"
+    },
+    {
+      "condition": "clearing",
+      "translation": "Alkere-Irreme"
+    },
+    {
+      "condition": "sky clearing",
+      "translation": "Alkerelheme"
+    },
+    {
+      "condition": "Green time after big rain",
+      "translation": "Atherrkenye"
+    },
+    {
+      "condition": "light rain / drizzle",
+      "translation": "Thewe-Thewe"
+    },
+    {
+      "condition": "spitting",
+      "translation": "Kwatye Pelhe-Pelhe"
+    },
+    {
+      "condition": "slight chance of a shower",
+      "translation": "Kwatye-Apeke Anhetyenhe"
+    },
+    {
+      "condition": "rain / raining",
+      "translation": "Kwatye-Le Anheme"
+    },
+    {
+      "condition": "raining heavily",
+      "translation": "Kwatye Akngerre Unterne?"
+    },
+    {
+      "condition": "possible storm",
+      "translation": "Kwatyele Atweme"
+    },
+    {
+      "condition": "hail",
+      "translation": "Apwerteke"
+    },
+    {
+      "condition": "fire ",
+      "translation": "Ure"
+    },
+    {
+      "condition": "river flow / flood",
+      "translation": "Kwatye-Urewe"
+    },
+    {
+      "condition": "thunder / lightning",
+      "translation": "Unernenge"
+    },
+    {
+      "condition": "frost",
+      "translation": "Ilweltye"
+    },
+    {
+      "condition": "smell of rain/ petrichor",
+      "translation": "Nyimpe"
+    },
+    {
+      "condition": "rainbow",
+      "translation": "Mpwelarre"
+    }
+  ]
 }
