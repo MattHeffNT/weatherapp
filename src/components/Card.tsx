@@ -7,9 +7,7 @@ interface WeatherData {
     condition: {
       text: string;
     };
-    // ... other properties you expect
   };
-  // ... other properties you expect
 }
 
 const Card: React.FC = () => {
@@ -17,7 +15,7 @@ const Card: React.FC = () => {
   const [conditions, setConditions] = useState<any>();
   const [Arrernte, setArrernte] = useState<any>();
 
-  const [weather, setWeather] = useState < WeatherData | null>(null);
+  const [weather, setWeather] = useState<WeatherData | null>(null);
 
   // get day
   const date = new Date()
@@ -31,8 +29,8 @@ const Card: React.FC = () => {
     const fetchWeather = async () => {
 
       try {
-        // const apiKey = import.meta.env.VITE_WEATHER_API_KEY
-        const apiKey = process.env.VITE_WEATHER_API_KEY
+        const apiKey = import.meta.env.VITE_WEATHER_API_KEY
+        // const apiKey = process.env.VITE_WEATHER_API_KEY
         const response = await fetch(
           // for the location either allow for search and or draw from the location of IP etc
           `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Alice&Springs&aqi=no`
@@ -44,9 +42,8 @@ const Card: React.FC = () => {
         console.error('Error fetching weather:', err);
       }
     };
-      fetchWeather()
+    fetchWeather()
   }, []);
-
 
   // Function to fetch data from our local Arrernte API and then set as conditions variable
   useEffect(() => {
@@ -121,7 +118,7 @@ const Card: React.FC = () => {
               <div id="condition" className="col-sm">
 
 
-                { weather ? (
+                {weather ? (
                   <>
                     <p>{Arrernte} | {weather.current.condition['text']}</p>
                   </>
