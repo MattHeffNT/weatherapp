@@ -31,7 +31,8 @@ const Card: React.FC = () => {
     const fetchWeather = async () => {
 
       try {
-        const apiKey = import.meta.env.VITE_WEATHER_API_KEY
+        // const apiKey = import.meta.env.VITE_WEATHER_API_KEY
+        const apiKey = process.env.VITE_WEATHER_API_KEY
         const response = await fetch(
           // for the location either allow for search and or draw from the location of IP etc
           `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Alice&Springs&aqi=no`
