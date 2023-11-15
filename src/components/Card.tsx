@@ -33,8 +33,8 @@ const Card: React.FC = () => {
     const fetchWeather = async () => {
 
       try {
-        const apiKey = import.meta.env.VITE_WEATHER_API_KEY
-        // const apiKey = process.env.VITE_WEATHER_API_KEY
+        // const apiKey = import.meta.env.VITE_WEATHER_API_KEY
+        const apiKey = process.env.VITE_WEATHER_API_KEY
 
         const response = await fetch(
 
