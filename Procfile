@@ -1,1 +1,1 @@
-web: npm run serve-heroku 
+web: vite preview --port $PORT
