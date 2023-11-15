@@ -12,10 +12,14 @@ interface WeatherData {
 
 const Card: React.FC = () => {
 
-  const [conditions, setConditions] = useState<any>();
-  const [Arrernte, setArrernte] = useState<any>();
-
+  //state to hold the weather api
   const [weather, setWeather] = useState<WeatherData | null>(null);
+
+  // state to hold our local translation api
+  const [conditions, setConditions] = useState<any>();
+
+  // state to combine weather api with our api
+  const [Arrernte, setArrernte] = useState<any>();
 
   // get day
   const date = new Date()
@@ -31,9 +35,12 @@ const Card: React.FC = () => {
       try {
         const apiKey = import.meta.env.VITE_WEATHER_API_KEY
         // const apiKey = process.env.VITE_WEATHER_API_KEY
+
         const response = await fetch(
+
           // for the location either allow for search and or draw from the location of IP etc
           `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Alice&Springs&aqi=no`
+
         );
 
         const data = await response.json();
@@ -66,11 +73,10 @@ const Card: React.FC = () => {
 
   // loop through conditions.json and use the weather api weather description string as the "key"
   // to see if the english matches, then it will pull from the json into our api
-
-  // Loop through conditions without rendering it
   useEffect(() => {
 
-    if (conditions && weather && weather.current && weather.current.condition) {
+    // check that the weather API has been pulled
+    if (conditions && weather) {
       for (let i = 0; i < conditions.length; i++) {
 
         try {
@@ -93,7 +99,6 @@ const Card: React.FC = () => {
         catch (error) {
           console.log("error:", error)
         }
-
       }
     }
   }, [conditions, Arrernte, weather]);
@@ -120,13 +125,11 @@ const Card: React.FC = () => {
 
                 {weather ? (
                   <>
-                    <p>{Arrernte} | {weather.current.condition['text']}</p>
+                    <p>{Arrernte} | {weather.current.condition.text}</p>
                   </>
                 ) : (
-                  // <p> {weather.current.condition['text']}</p>
                   <p> .. loading</p>
                 )}
-
 
               </div>
             </div>
